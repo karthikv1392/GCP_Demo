@@ -19,6 +19,15 @@
 
 
 
+## Set up the Python Environment
+
+1. wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+2. bash <Miniconda_file>.sh
+3. source ~/.bashrc (For changes to take effect)
+4. pip install tornado
+5. Copy the web service to your instance using scp -i key.pem -r /path to your code/ username@ipadress:/home/username/foldername/
+
+
 
 
 
