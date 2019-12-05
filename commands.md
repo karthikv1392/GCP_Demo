@@ -29,15 +29,22 @@
 ## Deploy a webservice in GCP compute
 
 1. Copy the web service to your instance using scp -i key.pem -r /path to your code/ username@ipadress:/home/username/foldername/
-2. 
+2. Enable proxy in apache :
+    1. sudo a2enmod proxy
+    2. sudo a2enmod proxy_http
+    3. sudo a2enmod proxy_balancer
+    4. sudo a2enmod lbmethod_byrequests
+    5. sudo systemctl restart apache2
+    6. cd /etc/apache2/sites-available
+    7. vim 00-default-sites.conf
+    8. Inside the <Virtualhost:*80> add the following 
+        ProxyPreserveHost On
+        ProxyPass /getImageDetails http://localhost:8065/analyze
+ 
+## Exercise
 
-
-
-## Deploy an app in App engine
-
-1. https://cloud.google.com/appengine/docs/standard/python/quickstart
-
-
+1. Deploy a hello world app in the app engine https://cloud.google.com/appengine/docs/standard/python/quickstart
+2. Install Jupyter notebook in your instance and access it from your local machine
 
 
 ## References
