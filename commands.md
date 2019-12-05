@@ -25,9 +25,17 @@
 2. bash <Miniconda_file>.sh
 3. source ~/.bashrc (For changes to take effect)
 4. pip install tornado
-5. Copy the web service to your instance using scp -i key.pem -r /path to your code/ username@ipadress:/home/username/foldername/
+
+## Deploy a webservice in GCP compute
+
+1. Copy the web service to your instance using scp -i key.pem -r /path to your code/ username@ipadress:/home/username/foldername/
+2. 
 
 
+
+## Deploy an app in App engine
+
+1. https://cloud.google.com/appengine/docs/standard/python/quickstart
 
 
 
