@@ -38,7 +38,9 @@
     6. cd /etc/apache2/sites-available
     7. vim 00-default-sites.conf
     8. Inside the <Virtualhost:*80> add the following 
+    
         ProxyPreserveHost On
+        
         ProxyPass /getImageDetails http://localhost:8065/analyze
  
 ## Exercise
