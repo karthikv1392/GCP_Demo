@@ -70,7 +70,7 @@
 
 1. Go back to your local machine and open "upload_post_server.html" from the clonned Git repository
 2. Edit the line 8 of the html using text editor (This line <form enctype="multipart/form-data" action="http://localhost:8065/analyze" method="post">)
-3. Replace the url in line 8 with "http://your instance ip/getImageDetails
+3. Replace the url in line 8 with "http://yourinstanceip/getImageDetails
 4. Open the html in a browser, click on the upload button and select any image file
 5. Click submit and check the response
     
