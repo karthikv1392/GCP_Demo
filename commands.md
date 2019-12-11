@@ -83,6 +83,50 @@ You have successfully deployed a web service on your instance !!
 2. Install Jupyter notebook in your instance and access it from your local machine
 
 
+# Kafka Commands
+
+Source : https://kafka.apache.org/quickstart
+
+
+
+Start Zookeeper
+
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+
+
+Start Kafka Server
+
+bin/kafka-server-start.sh config/server.properties
+
+
+Create topic
+
+bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
+
+
+Send Messages
+
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+
+
+Start a consumer
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
+
+List topics
+
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+
+
+
+
+
+
+
 ## References
 
 1. https://cloud.google.com/python/docs/reference/
